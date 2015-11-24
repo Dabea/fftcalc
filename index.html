@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Final Fantasy Tactics Stat Calculator</title>
+    <script src="lib/jQuery/jquery-2.1.4.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <link href="lib/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+    <link href="styles/main.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div  class="container" style="overflow: hidden;">
+
+        <div  style="float: left;" class="knight"  id="job">
+            a
+        </div>
+
+        <div class="stat-box-bar" >
+            <div style="margin-left: auto; width: 175px;"> <span > Lv. <input size="1" type="text"> Exp <input size="1" type="text"></span></div>
+            <div > <img class="bar-stat" src="styles/images/hpbar2.png" > <input class="text-input"  type="text" size="1"> </div>
+            <div > <img class="bar-stat" src="styles/images/mpbar.png" ><input class="text-input" type="text" size="1"> </div>
+            <div > <img class="bar-stat" src="styles/images/ctbar.png" ><input class="text-input" type="text" size="1"> </div>
+        </div>
+        <div>
+            <div> Class
+                <select id="jobSelector">
+                    <option value="squire"> Squire</option>
+                    <option value="Chemist"> Chemist</option>
+                    <option value="Knight"> Knight</option>
+                    <option value="Archer"> Archer</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="stat-container"  style="clear: both" >
+            <div class="stat-box-base-container">
+                <div > <input class="ext-input" type="text" size="1"> <img class="base-stat" src="styles/images/move.png" >    </div>
+                <div > <input class="ext-input" type="text" size="1"> <img class="base-stat" src="styles/images/speed.png" >   </div>
+                <div > <input class="ext-input" type="text" size="1"> <img class="base-stat" src="styles/images/jump.png" >    </div>
+            </div>
+            <div class="stat-box-atk-container" >
+                <div class="stat-box-atk"> <input class="ext-input" type="text" size="1"> <img class="base-stat" src="styles/images/paicon.png" >  </div>
+                <div class="stat-box-atk"> <input class="ext-input" type="text" size="1"> <img class="base-stat" src="styles/images/maicon.png" >  </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

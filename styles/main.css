@@ -1,0 +1,85 @@
+.container{
+    background-color: #222222;
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    color: #ffffff;
+
+
+}
+
+
+
+.stat-container{
+    background-image: url("../styles/images/fftbg.gif");
+    height: 100px;
+    width: 764px;
+    border:3px #635142 solid;
+    border-bottom: 3px #423121 solid;
+    padding: 15px;
+
+}
+
+.base-stat{
+    margin-bottom: 8px;
+
+}
+.ext-input{
+    float: right;
+}
+
+.stat-box-bar{
+    width: 217px;
+    float: left;
+
+}
+.stat-box-movment{
+     width: 207px;
+
+ }
+
+.stat-box-atk{
+    width: 80px;
+
+}
+
+.stat-box-base-container{
+    width: 195px;
+    float: left
+}
+
+.stat-box-atk-container{
+    float: left;
+    width: 100px;
+    margin-left: 15px;
+}
+
+/*
+* Job Image Sprite sheet
+*/
+.squire, .chemist, .knight, .archer{
+    background-image: url('../styles/images/fftjobs.jpg');
+    background-repeat: no-repeat;
+}
+
+.squire{
+    width:73px;
+    height: 116px;
+    background-position: 0 , -340;
+
+}
+.chemist{
+    width:73px;
+    height: 116px;
+    background-position: -219px  0px;
+}
+.knight{
+    width:73px;
+    height: 116px;
+    background-position: 0px  -232px;
+}
+.archer{
+    width:73px;
+    height: 116px;
+    background-position: 0px  -116px;
+}
