@@ -57,29 +57,53 @@
 /*
 * Job Image Sprite sheet
 */
-.squire, .chemist, .knight, .archer{
+.squire-male, .chemist-male, .knight-male, .archer-male, .squire-female, .chemist-female, .knight-female, .archer-female{
     background-image: url('../styles/images/fftjobs.jpg');
     background-repeat: no-repeat;
 }
 
-.squire{
+.squire-male{
     width:73px;
     height: 116px;
-    background-position: 0 , -340;
+    background-position: 0px  0px;
 
 }
-.chemist{
+.chemist-male{
     width:73px;
     height: 116px;
     background-position: -219px  0px;
 }
-.knight{
+.knight-male{
     width:73px;
     height: 116px;
     background-position: 0px  -232px;
 }
-.archer{
+.archer-male{
     width:73px;
     height: 116px;
     background-position: 0px  -116px;
 }
+
+
+.squire-female{
+    width:73px;
+    height: 116px;
+    background-position: -511px  0px;
+
+}
+.chemist-female{
+    width:73px;
+    height: 116px;
+    background-position: -730px  0px;
+}
+.knight-female{
+    width:73px;
+    height: 116px;
+    background-position: -511px  -232px;
+}
+.archer-female{
+    width:73px;
+    height: 116px;
+    background-position: -511px  -116px;
+}
+

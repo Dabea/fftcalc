@@ -3,7 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Final Fantasy Tactics Stat Calculator</title>
-    <script src="lib/jQuery/jquery-2.1.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="scripts/main.js"></script>
     <link href="lib/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
     <link href="styles/main.css" type="text/css" rel="stylesheet">
@@ -11,8 +11,8 @@
 <body>
     <div  class="container" style="overflow: hidden;">
 
-        <div  style="float: left;" class="knight"  id="job">
-            a
+        <div  style="float: left;"  class="squire-male" id="currentJob">
+
         </div>
 
         <div class="stat-box-bar" >
@@ -22,14 +22,20 @@
             <div > <img class="bar-stat" src="styles/images/ctbar.png" ><input class="text-input" type="text" size="1"> </div>
         </div>
         <div>
-            <div> Class
-                <select id="jobSelector">
-                    <option value="squire"> Squire</option>
-                    <option value="Chemist"> Chemist</option>
-                    <option value="Knight"> Knight</option>
-                    <option value="Archer"> Archer</option>
+            <div>Class
+                <select name="jobstuff" id="jobChoices">
+                    <option value="1"> Squire</option>
+                    <option value="2"> Chemist</option>
+                    <option value="3"> Knight</option>
+                    <option value="4"> Archer</option>
+
                 </select>
             </div>
+            <div>
+                Male <input  value="male" type="radio" name="gender" checked> Female <input value="female" type="radio"  name="gender">
+
+            </div>
+
         </div>
 
         <div class="stat-container"  style="clear: both" >
