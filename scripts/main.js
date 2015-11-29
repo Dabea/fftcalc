@@ -4,10 +4,10 @@
 'use strict';
 
 var jobsDataObject = {
-    1:  { name: "squire"    ,HPMod: 100 ,  MPMod : 75 ,  PAMod : 90 ,  MAMod : 80 , SPMod : 100 , move: 4 , jump: 3 , evade: 5, cHP :11,  cMP: 15,   cPA: 60,  cMA: 50, cSP:  100   },
-    2:  { name: "chemist"   ,HPMod: 80 ,  MPMod : 75 ,  PAMod : 75 ,  MAMod : 80 , SPMod : 100 , move: 3 , jump: 3 , evade: 5, cHP :12,  cMP: 16,   cPA: 75,  cMA: 50, cSP:  100   },
-    3:  { name: "knight"    ,HPMod: 120 , MPpMod : 80 ,  PAMod : 120 ,  MAMod : 80 , SPMod : 100 , move: 3 , jump: 3 , evade: 10, cHP :10,  cMP: 15,   cPA: 40,  cMA: 50, cSP:  100 },
-    4:  { name: "archer"    ,HPMod: 100 , MPpMod : 65 ,  PAMod : 110 ,  MAMod : 80 , SPMod : 100 , move: 3 , jump: 4 , evade: 10, cHP :11,  cMP: 16,   cPA: 45,  cMA: 50, cSP:  100 },
+    1:  { name: "squire"    ,HPMod: 100 ,  MPMod: 75 ,  PAMod : 90 ,  MAMod : 80 , SPMod : 100 , move: 4 , jump: 3 , evade: 5, cHP :11,  cMP: 15,   cPA: 60,  cMA: 50, cSP:  100   },
+    2:  { name: "chemist"   ,HPMod: 80 ,  MPMod: 75 ,  PAMod : 75 ,  MAMod : 80 , SPMod : 100 , move: 3 , jump: 3 , evade: 5, cHP :12,  cMP: 16,   cPA: 75,  cMA: 50, cSP:  100   },
+    3:  { name: "knight"    ,HPMod: 120 , MPMod: 80 ,  PAMod : 120 ,  MAMod : 80 , SPMod : 100 , move: 3 , jump: 3 , evade: 10, cHP :10,  cMP: 15,   cPA: 40,  cMA: 50, cSP:  100 },
+    4:  { name: "archer"    ,HPMod: 100 , MPMod: 65 ,  PAMod : 110 ,  MAMod : 80 , SPMod : 100 , move: 3 , jump: 4 , evade: 10, cHP :11,  cMP: 16,   cPA: 45,  cMA: 50, cSP:  100 },
     5:  { name: "monk"      ,HPMod: 135 , MPMod:   80, PAMod:  129, MAMod:  80, SPMod:  110, move:   3, jump:  4, evade:  20 , cHP:   9  , cMP: 13 ,  cPA:  48 ,  cMA:  50 , cSP: 100 },
     6:  { name: "priest"    ,HPMod:  80, MPMod:  120,  PAMod:  90, MAMod:  110, SPMod:  110 , move:  3,  jump:  3 , evade:  5 , cHP:   10 , cMP:  10,  cPA:   50,  cMA:   50, cSP:  100 },
     7:  { name: "wizard"    ,HPMod:  75, MPMod:  120,  PAMod:  60, MAMod:  150, SPMod:  100 , move:  3,  jump:  3 , evade:  5 , cHP:   12 , cMP:   9,  cPA:   60,  cMA:   50, cSP:  100 },
@@ -32,6 +32,10 @@ $('#jobChoices').change(function() {
     changeJobImage();
 });
 
+    $('.level-up').on('click' , function(){
+        levelUp(1);
+    });
+
 $("input[name=gender]:radio").change(function () {
     changeJobImage();
 });
@@ -49,10 +53,10 @@ function changeJobImage(){
 
     currentJob.removeClass();
     currentJob.addClass(fullJob);
-    console.log(jobsDataObject[value]);
-    console.log(jobsDataObject);
+
 }
 
 function setUpHandlers() {
     this.onStartButtonClick = 1;
 }
+

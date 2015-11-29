@@ -17,13 +17,13 @@
         </div>
 
         <div class="stat-box-bar" >
-            <div style="margin-left: auto; width: 175px;"> <span > Lv. <input size="1" type="text"> Exp <input size="1" type="text"></span></div>
-            <div > <img class="bar-stat" src="styles/images/hpbar2.png" > <input class="text-input"  type="text" size="1"> </div>
-            <div > <img class="bar-stat" src="styles/images/mpbar.png" ><input class="text-input" type="text" size="1"> </div>
-            <div > <img class="bar-stat" src="styles/images/ctbar.png" ><input class="text-input" type="text" size="1"> </div>
+            <div style="margin-left: auto; width: 175px;"> <span > Lv. <input id="level" size="1" type="text"> Exp <input size="1" type="text"></span></div>
+            <div > <img class="bar-stat" src="styles/images/hpbar2.png" > <input id="hp" class="text-input"  type="text" size="1"> </div>
+            <div > <img class="bar-stat" src="styles/images/mpbar.png" ><input id="mp" class="text-input" type="text" size="1"> </div>
+            <div > <img class="bar-stat" src="styles/images/ctbar.png" ><input id="ct" class="text-input" type="text" size="1"> </div>
         </div>
-        <div>
-            <div>Class
+        <div style="float: left">
+            <div style="width: 150px;">Class
                 <select name="jobstuff" id="jobChoices">
                     <option value="1"> Squire</option>
                     <option value="2"> Chemist</option>
@@ -53,17 +53,23 @@
 
             </div>
 
+
+        </div>
+        <div style="float: left; width: 100px;">
+            <button class="start">Start</button>
+            <button class="reset">Rest</button>
+            <button class="level-up">Level Up</button>
         </div>
 
         <div class="stat-container"  style="clear: both" >
             <div class="stat-box-base-container">
-                <div > <input class="ext-input" type="text" size="1"> <img class="base-stat" src="styles/images/move.png" >    </div>
-                <div > <input class="ext-input" type="text" size="1"> <img class="base-stat" src="styles/images/speed.png" >   </div>
-                <div > <input class="ext-input" type="text" size="1"> <img class="base-stat" src="styles/images/jump.png" >    </div>
+                <div > <input id="move" class="ext-input" type="text" size="1"> <img class="base-stat" src="styles/images/move.png" >    </div>
+                <div > <input id="speed" class="ext-input" type="text" size="1"> <img class="base-stat" src="styles/images/speed.png" >   </div>
+                <div > <input id="jump" class="ext-input" type="text" size="1"> <img class="base-stat" src="styles/images/jump.png" >    </div>
             </div>
             <div class="stat-box-atk-container" >
-                <div class="stat-box-atk"> <input class="ext-input" type="text" size="1"> <img class="base-stat" src="styles/images/paicon.png" >  </div>
-                <div class="stat-box-atk"> <input class="ext-input" type="text" size="1"> <img class="base-stat" src="styles/images/maicon.png" >  </div>
+                <div class="stat-box-atk"> <input id="pa" class="ext-input" type="text" size="1"> <img class="base-stat" src="styles/images/paicon.png" >  </div>
+                <div class="stat-box-atk"> <input id="ma" class="ext-input" type="text" size="1"> <img class="base-stat" src="styles/images/maicon.png" >  </div>
             </div>
 
         </div>

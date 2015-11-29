@@ -57,8 +57,8 @@
 /*
 * Job Image Sprite sheet
 */
-.squire-male, .chemist-male, .knight-male, .archer-male, .squire-female, .chemist-female, .knight-female, .archer-female ,.monk-female,  .geomancer-female, .oracle-female, .summoner-female, .theif-female, .ninja-female, .blackmage-female, .timemage-female, .calculator-female, .mime-female, .lancer-female, .samurai-female, .preist-female, .medieator-female, .dancer-female, .monk-male ,  .geomancer-male , .oracle-male .summoner-male , .thief-male , .ninja-male , .wizard-male , .timeMage-male , .calculator-male , .mime-male, .lancer-male, .samurai-male, .priest-male, .medieator-male, .bard-male {
-    background-image: url('../styles/images/fftjobs.jpg');
+.squire-male, .chemist-male, .knight-male, .archer-male, .squire-female, .chemist-female, .knight-female, .archer-female, .monk-female,  .geomancer-female, .oracle-female, .summoner-female, .mediator-male, .thief-female, .ninja-female, .wizard-female, .timeMage-female, .calculator-female, .priest-female, .mime-female, .lancer-female, .samurai-female, .preist-female, .mediator-female, .dancer-female, .monk-male ,  .geomancer-male , .oracle-male , .summoner-male, .thief-male , .ninja-male , .wizard-male , .timeMage-male , .calculator-male , .mime-male, .lancer-male, .samurai-male, .priest-male, .mediator-male, .bard-male {
+    background-image: url('../styles/images/fftjobs.png');
     background-repeat: no-repeat;
 }
 
@@ -163,82 +163,6 @@
 
 
 
-.monk-female{
-    width:73px;
-    height:116px;
-    background-position: 0px 0px;
-}
-.geomancer-female{
-    width:73px;
-    height:116px;
-    background-position: 0px 0px;
-}
-.oracle-female{
-    width:73px;
-    height:116px;
-    background-position: 0px 0px;
-}
-.summoner-female{
-    width:73px;
-    height:116px;
-    background-position: 0px 0px;
-}
-.theif-female{
-    width:73px;
-    height:116px;
-    background-position: 0px 0px;
-}
-.ninja-female{
-    width:73px;
-    height:116px;
-    background-position: 0px 0px;
-}
-.blackmage-female{
-    width:73px;
-    height:116px;
-    background-position: 0px 0px;
-}
-.timemage-female{
-    width:73px;
-    height:116px;
-    background-position: 0px 0px;
-}
-.calculator-female{
-    width:73px;
-    height:116px;
-    background-position: 0px 0px;
-}
-.mime-female{
-    width:73px;
-    height:116px;
-    background-position: 0px 0px;
-}
-.lancer-female{
-    width:73px;
-    height:116px;
-    background-position: 0px 0px;
-}
-.samurai-female{
-    width:73px;
-    height:116px;
-    background-position: 0px 0px;
-}
-.preist-female{
-    width:73px;
-    height:116px;
-    background-position: 0px 0px;
-}
-.medieator-female{
-    width:73px;
-    height:116px;
-    background-position: 0px 0px;
-}
-.dancer-female{
-    width:73px;
-    height:116px;
-    background-position: 0px 0px;
-}
-
 
 
 .squire-female{
@@ -263,3 +187,79 @@
     background-position: -511px  -116px;
 }
 
+
+.monk-female{
+    width:73px;
+    height:116px;
+    background-position: -584px 0px;
+}
+.geomancer-female{
+    width:73px;
+    height:116px;
+    background-position: -657px 0px;
+}
+.oracle-female{
+    width:73px;
+    height:116px;
+    background-position: -803px 0px;
+}
+.summoner-female{
+    width:73px;
+    height:116px;
+    background-position: -876px 0px;
+}
+.thief-female{
+    width:73px;
+    height:116px;
+    background-position: -584px -116px;
+}
+.ninja-female{
+    width:73px;
+    height:116px;
+    background-position: -657px -116px;
+}
+.wizard-female{
+    width:73px;
+    height:116px;
+    background-position: -730px -116px;
+}
+.timeMage-female{
+    width:73px;
+    height:116px;
+    background-position: -803px -116px;
+}
+.calculator-female{
+    width:73px;
+    height:116px;
+    background-position: -876px -116px;
+}
+.mime-female{
+    width:73px;
+    height:116px;
+    background-position: -949px -116px;
+}
+.lancer-female{
+    width:73px;
+    height:116px;
+    background-position: -584px -232px;
+}
+.samurai-female{
+    width:73px;
+    height:116px;
+    background-position: -657px -232px;
+}
+.priest-female{
+    width:73px;
+    height:116px;
+    background-position: -730px -232px;
+}
+.mediator-female{
+    width:73px;
+    height:116px;
+    background-position: -803px -232px;
+}
+.dancer-female{
+    width:73px;
+    height:116px;
+    background-position: -876px -232px;
+}
