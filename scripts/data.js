@@ -1,8 +1,6 @@
 /**
- * Created by aanderson on 11/22/2015.
+ * Created by aanderson on 12/5/2015.
  */
-'use strict';
-
 var jobsDataObject = {
     1:  { name: "squire"    ,HPMod: 100 ,  MPMod: 75 ,  PAMod : 90 ,  MAMod : 80 , SPMod : 100 , move: 4 , jump: 3 , evade: 5, cHP :11,  cMP: 15,   cPA: 60,  cMA: 50, cSP:  100   },
     2:  { name: "chemist"   ,HPMod: 80 ,  MPMod: 75 ,  PAMod : 75 ,  MAMod : 80 , SPMod : 100 , move: 3 , jump: 3 , evade: 5, cHP :12,  cMP: 16,   cPA: 75,  cMA: 50, cSP:  100   },
@@ -26,70 +24,40 @@ var jobsDataObject = {
     20: { name: "mime"      ,HPMod: 140, MPMod:   50,  PAMod: 120, MAMod:  115, SPMod:  120 , move:  4,  jump:  4 , evade:  5 , cHP:   6  , cMP: 30,  cPA:   35,  cMA:   40, cSP:  100 }
 };
 
-$(document).ready(function() {
+var character = {
+    level :1,
+    job: jobsDataObject[1],
+    gender:0,
+    HP:0,
+    MP:0,
+    CT:100,
+    PA:0,
+    MA:0,
+    SP:0,
+    move:0,
+    jump:0,
+    evade:0,
+    RHP:0,
+    RMP:0,
+    RSP:0,
+    RPA:0,
+    RMA:0
+};
 
+var startingRawStats = {
 
-
-        $('#jobChoices').change(function() {
-    changeJobImage();
-    stats();
-    displayStats();
-});
-
-    $('.level-up').on('click' , function(){
-        levelUp(1);
-    });
-
-    $('.level-down').on('click' , function(){
-        levelDown(1);
-    });
-
-
-
-$("input[name=gender]:radio").change(function () {
-    changeJobImage();
-});
-
-$('.start').on('click' , function(){
-    start();
-});
-
-
-});
-
-
-function changeJobImage(){
-    var value = $('#jobChoices').val();
-    var currentJob =  $('#currentJob');
-    var gender = $('input[name=gender]:checked').val();
-    var fullJob = jobsDataObject[value].name + "-" + gender;
-    character.job = jobsDataObject[value];
-
-    currentJob.removeClass();
-    currentJob.addClass(fullJob);
-
-}
-
-function setUpHandlers() {
-    this.onStartButtonClick = 1;
-}
-
-function selectorCaching(){
-    var selector = {};
-
-    var getCache = function(selector){
-
+    male : {
+        RSP : 98304,
+        RPA: 81920,
+        RMA: 65536,
+        RHP: function(){return   Math.floor(Math.random() * 32767) + 491520; },
+        RMP: function(){return   Math.floor(Math.random() * 16383) + 229376; }
+    },
+    female :{
+        RSP : 98304,
+        RPA: 65536,
+        RMA: 81920,
+        RHP: function(){return   Math.floor(Math.random() * 32767) + 458752; },
+        RMP: function(){return   Math.floor(Math.random() * 16383) + 245760 ; }
     }
-}
-
-
-
-/*
-*   Questions
-*
-*   When to to use selector caching
-*       More of a less when NOT to use it ex gender selector
-*
-*
-*
- */
+};

@@ -55,7 +55,7 @@ character.create = function(gender){
 
 //This is the base equation that determins the stats for the characters
 function statAlgorithm( rawstat, jobMultiplier){
- return Math.floor( ((rawstat * jobMultiplier) / 1638400));
+ return  ((rawstat * jobMultiplier) / 1638400);
 }
 
 // This will run though each stat and calculate it
@@ -76,9 +76,29 @@ function start(){
     character.create(gender);
     $("input[name=gender]").attr('disabled', true);
     stats();
+    displayStats();
 }
 
 function restart(){
+    this.character = {
+        level :1,
+        job: jobsDataObject[1],
+        gender:0,
+        HP:0,
+        MP:0,
+        CT:100,
+        PA:0,
+        MA:0,
+        SP:0,
+        move:0,
+        jump:0,
+        evade:0,
+        RHP:0,
+        RMP:0,
+        RSP:0,
+        RPA:0,
+        RMA:0
+    };
     $("input[name=gender]").attr('disabled', false);
 
 }
