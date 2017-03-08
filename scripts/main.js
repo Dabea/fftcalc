@@ -27,10 +27,7 @@ var jobsDataObject = {
 };
 
 $(document).ready(function() {
-
-
-
-        $('#jobChoices').change(function() {
+    $('#jobChoices').change(function() {
     changeJobImage();
     stats();
     displayStats();
